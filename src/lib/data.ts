@@ -186,53 +186,53 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "gds-mcp",
     title: "GDS-MCP",
-    subtitle: "AI-powered documentation workflow for the Global Design System",
+    subtitle: "MCP-powered documentation workflow for the Global Design System",
     category: "AI Engineering / Design Systems",
-    year: "2024",
+    year: "2025",
     color: "black",
     thumbnail: "/images/gds-mcp/thumb.jpg",
     hero: "/images/gds-mcp/hero.jpg",
     overview: {
-      role: "Developer & Designer",
-      timeline: "Ongoing",
-      team: "2 contributors",
+      role: "Creator & Developer",
+      timeline: "1 week",
+      team: "Solo project",
       tools: ["TypeScript", "MCP SDK", "Figma API", "Node.js"],
     },
     results: [
-      { metric: "Components documented", value: "50+" },
-      { metric: "Documentation layers", value: "5" },
-      { metric: "Tool integrations", value: "4" },
+      { metric: "Doc categories", value: "5" },
+      { metric: "Tool support", value: "4" },
+      { metric: "Setup required", value: "Zero" },
     ],
     challenge:
-      "Design system documentation is time-consuming to write and quickly becomes outdated. Developers and AI assistants struggle to find accurate, structured information about components, tokens, and patterns. I wanted to automate documentation generation directly from Figma designs, optimised for LLM retrieval.",
+      "Design system documentation is tedious to write and quickly falls out of sync with Figma designs. Developers and AI coding assistants struggle to find accurate component specs, tokens, and accessibility requirements. I wanted to automate documentation generation directly from Figma, optimised for LLM retrieval.",
     process: [
       {
-        title: "Figma API Integration",
+        title: "Figma Integration",
         description:
-          "Built a Figma plugin and API integration to extract component data, variants, design tokens, and properties directly from design files.",
+          "Built integration with Figma's API to extract component data, variants, design tokens, and properties directly from design files using the /figma-doc command.",
       },
       {
-        title: "MCP Server Architecture",
+        title: "MCP Server Design",
         description:
-          "Designed an MCP server that exposes design system documentation to AI assistants. Structured content across atoms, molecules, organisms, foundations, and patterns.",
+          "Created an MCP server that exposes GDS documentation to AI assistants. Organised content across atoms, molecules, organisms, foundations, and patterns.",
       },
       {
         title: "Documentation Schema",
         description:
-          "Created a structured markdown format including component overviews, variants, accessibility requirements, Tailwind mappings, and CSS custom properties.",
+          "Designed structured markdown output including component overviews, accessibility requirements, Tailwind utility mappings, and CSS custom properties.",
       },
       {
-        title: "Multi-tool Support",
+        title: "Zero-config Setup",
         description:
-          "Enabled integration with Claude Code, Cursor, VS Code, and Windsurf—allowing teams to query design system docs directly in their workflow.",
+          "Enabled remote MCP server access—no local installation required. Works with Claude Code, Cursor, VS Code, and Windsurf out of the box.",
       },
     ],
     solution:
-      "Shipped an open-source MCP server that generates structured documentation from Figma designs. The /figma-doc command extracts component specs, design tokens, and accessibility guidelines. AI assistants can now answer questions about the design system with accurate, up-to-date information.",
+      "Shipped an open-source MCP server that generates structured documentation from Figma designs. AI assistants can query design system components, tokens, and patterns directly in the developer's workflow. The /figma-doc skill extracts specs and accessibility guidelines automatically.",
     learnings: [
-      "MCP makes design system knowledge accessible to AI assistants in context",
-      "Structured documentation formats are essential for LLM retrieval accuracy",
-      "Automating from source (Figma) keeps documentation in sync with designs",
+      "MCP enables design systems to become AI-native knowledge bases",
+      "Zero-config remote servers lower adoption barriers significantly",
+      "Structured markdown is key for accurate LLM retrieval",
     ],
   },
 ];
